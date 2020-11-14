@@ -1,0 +1,28 @@
+.menu {
+  ul {
+    display: flex;
+    font-weight: 700;
+
+    li {
+      margin-right: 30px;
+      transition: 0.1s linear;
+
+      &:last-child {
+        margin-right: 0;
+      }
+      
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      a {
+        padding: 5px;
+        border-radius: 5px;
+
+        &.active {
+          background: #eee;
+        }
+      }
+    }
+  }
+}
