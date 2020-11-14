@@ -9,7 +9,7 @@ export const Menu = () => {
     return (
         <nav className={styles.menu}>
             <ul>
-                <li><NavLink activeClassName={styles.active} to='/myProfile'>My profile</NavLink></li>
+                <li><NavLink activeClassName={styles.active} to='/profile'>My profile</NavLink></li>
                 <li><NavLink activeClassName={styles.active} to='/messages'>Messages</NavLink></li>
                 <li><NavLink activeClassName={styles.active} to='/news'>News</NavLink></li>
                 <li><NavLink activeClassName={styles.active} to='/music'>Music</NavLink></li>

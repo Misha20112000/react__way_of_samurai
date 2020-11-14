@@ -1,0 +1,84 @@
+.messages {
+  display: flex;
+  justify-content: space-between;
+
+  .dialogs {
+    width: 25%;
+    padding: 5px;
+
+    .dialogItem {
+      display: block;
+      padding: 5px;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      transition: 0.1s linear;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+      
+      &.active {
+        background: #eee;
+      }
+
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+  }
+
+  .messagesField {
+    width: 73%;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background: #e2dbdb;
+    display: flex;
+    flex-direction: column;
+
+    .messageItem {
+      padding: 5px;
+      background: #eee;
+      border-radius: 5px;
+      margin-bottom: 5px;
+
+      span {
+        position: relative;
+        z-index: 1;
+      }
+    }
+
+    .myMessage {
+      align-self: flex-end;
+      position: relative;
+
+      &:after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        background: #eee;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(50% ,-50%) rotate(45deg);
+      }
+    }
+
+    .yourMessage {
+      align-self: flex-start;
+      position: relative;
+
+      &:before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        background: #eee;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(-50% ,-50%) rotate(45deg);
+      }
+    }
+  }
+}
